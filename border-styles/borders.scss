@@ -91,6 +91,17 @@ body {
         transform: rotate(45deg);
       }
     }
+
+    #call-notification {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      transform: translateX(-50%);
+      border: 0.15rem solid whitesmoke;
+      width: 14rem;
+      height: 5rem;
+    }
   }
 
   #sidebar-container {
@@ -98,6 +109,7 @@ body {
       .border {
         position: absolute;
         background: whitesmoke;
+        transition: all 0.3s ease;
       }
 
       .corner-border {
@@ -105,6 +117,7 @@ body {
         height: 2.1213203435596424rem;
         border-bottom: 0.15rem solid whitesmoke;
         background: transparent;
+        transition: all 0.3s ease;
       }
 
       .sidebar-right-border {
@@ -161,15 +174,14 @@ body {
         }
       }
 
-      .slide-tab-container {
+      #slide-tab-container {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: -0.45rem;
+        right: -0.375rem;
         width: 1.6rem;
-        height: 10rem;
-        background: #001;
-        clip-path: polygon(0 1.5rem, 100% -2%, 100% 102%, 0 8.5rem);
+        height: 9.8rem;
+        clip-path: polygon(0 1.5rem, 100% -2%, 100% 101%, 0 8.3rem);
         transition: background 0.2s ease-in-out;
 
         .left-border {
@@ -193,7 +205,7 @@ body {
         }
 
         .bl-border {
-          bottom: 0.425rem;
+          bottom: 0.45rem;
           left: 0.425rem;
           transform: rotate(45deg);
         }

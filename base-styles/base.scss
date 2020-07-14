@@ -1,0 +1,142 @@
+body {
+  position: relative;
+  background: #001;
+  clip-path: polygon(
+    17% 0,
+    89.25% 0,
+    100% 6%,
+    100% 94%,
+    89.25% 100%,
+    17% 100%,
+    8.5% 95%,
+    8.5% 76.25%,
+    0 71.5%,
+    0 21.5%,
+    8.5% 16.75%,
+    8.5% 5%
+  );
+  z-index: 1;
+
+  .body-container {
+    position: relative;
+    width: calc(100% - 1rem);
+    height: calc(100vh - 1rem);
+    margin: 0.5rem;
+    overflow: none;
+    z-index: 0;
+    background: #001;
+    background-image: url("../images/rocinante.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .body-border-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    #call-notification {
+      padding: 0.25rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      .notification-text {
+        grid-column: 1 / 3;
+        color: whitesmoke;
+        text-align: center;
+      }
+
+      .notification-confirm {
+        text-align: center;
+        color: whitesmoke;
+        padding: 0.25rem;
+        border: 0.15rem solid whitesmoke;
+      }
+
+      .notification-decline {
+        text-align: center;
+        color: whitesmoke;
+        padding: 0.25rem;
+        border: 0.15rem solid whitesmoke;
+      }
+    }
+  }
+
+  #sidebar-container {
+    position: absolute;
+    top: 6.5rem;
+    left: -6.25rem;
+    width: 7.9rem;
+    height: calc(100vh - 17rem);
+    padding-right: 1.3rem;
+    padding-left: 0.6rem;
+    transition: left 0.3s ease-in-out;
+
+    .sidebar-outer-border-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    #sidebar-component-container {
+      position: absolute;
+      width: 80%;
+      height: calc(100% - 3rem);
+      top: 1.5rem;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 0.25rem;
+    }
+  }
+
+  #viewport-container {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    width: 92.5%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: -1;
+
+    h1 {
+      padding: 0.25rem 1.5rem;
+      font-weight: 400;
+
+      .main-title {
+        display: block;
+        font-size: 0.9rem;
+      }
+      .sub-title {
+        display: block;
+        font-size: 0.9rem;
+      }
+    }
+
+    #browser {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      perspective: 1000px;
+      z-index: 2;
+
+      .top-fold {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+        transform: rotateX(90deg);
+        transform-origin: center;
+        background: yellow;
+      }
+    }
+  }
+}

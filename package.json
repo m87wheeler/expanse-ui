@@ -1,0 +1,19 @@
+{
+  "name": "expanse-ui",
+  "version": "1.0.0",
+  "description": "Building a usable web-based UI based on The Expanse",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m87wheeler/expanse-ui.git"
+  },
+  "author": "Martin Wheeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m87wheeler/expanse-ui/issues"
+  },
+  "homepage": "https://github.com/m87wheeler/expanse-ui#readme"
+}

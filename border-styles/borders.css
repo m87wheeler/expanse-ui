@@ -94,9 +94,24 @@ body .body-container .body-border-container .bl-border {
           transform: rotate(45deg);
 }
 
+body .body-container #call-notification {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 0.15rem solid whitesmoke;
+  width: 14rem;
+  height: 5rem;
+}
+
 body #sidebar-container .sidebar-outer-border-wrapper .border {
   position: absolute;
   background: whitesmoke;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body #sidebar-container .sidebar-outer-border-wrapper .corner-border {
@@ -104,6 +119,8 @@ body #sidebar-container .sidebar-outer-border-wrapper .corner-border {
   height: 2.1213203435596424rem;
   border-bottom: 0.15rem solid whitesmoke;
   background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body #sidebar-container .sidebar-outer-border-wrapper .sidebar-right-border .top-border {
@@ -171,44 +188,43 @@ body #sidebar-container .sidebar-outer-border-wrapper .sidebar-right-border .bot
   height: 0.15rem;
 }
 
-body #sidebar-container .sidebar-outer-border-wrapper .slide-tab-container {
+body #sidebar-container .sidebar-outer-border-wrapper #slide-tab-container {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: -0.45rem;
+  right: -0.375rem;
   width: 1.6rem;
-  height: 10rem;
-  background: #001;
-  -webkit-clip-path: polygon(0 1.5rem, 100% -2%, 100% 102%, 0 8.5rem);
-          clip-path: polygon(0 1.5rem, 100% -2%, 100% 102%, 0 8.5rem);
+  height: 9.8rem;
+  -webkit-clip-path: polygon(0 1.5rem, 100% -2%, 100% 101%, 0 8.3rem);
+          clip-path: polygon(0 1.5rem, 100% -2%, 100% 101%, 0 8.3rem);
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
 
-body #sidebar-container .sidebar-outer-border-wrapper .slide-tab-container .left-border {
+body #sidebar-container .sidebar-outer-border-wrapper #slide-tab-container .left-border {
   height: 7rem;
   width: 0.15rem;
   top: 1.5rem;
   left: 0;
 }
 
-body #sidebar-container .sidebar-outer-border-wrapper .slide-tab-container .right-border {
+body #sidebar-container .sidebar-outer-border-wrapper #slide-tab-container .right-border {
   height: 10rem;
   width: 0.15rem;
   top: 0;
   right: -0.05rem;
 }
 
-body #sidebar-container .sidebar-outer-border-wrapper .slide-tab-container .tl-border {
+body #sidebar-container .sidebar-outer-border-wrapper #slide-tab-container .tl-border {
   top: 0.425rem;
   left: 0.425rem;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-body #sidebar-container .sidebar-outer-border-wrapper .slide-tab-container .bl-border {
-  bottom: 0.425rem;
+body #sidebar-container .sidebar-outer-border-wrapper #slide-tab-container .bl-border {
+  bottom: 0.45rem;
   left: 0.425rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
